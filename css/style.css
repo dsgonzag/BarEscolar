@@ -1,0 +1,74 @@
+#imgFondo{
+   
+    background-image: url(../img/fondo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: beige ;
+}
+#logo{
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 5px;
+    left : 10px;
+
+    }
+    #tituloIniciar{
+        position:relative;
+        top:7em;
+        width:800px;
+        height:150px;
+        
+        }
+        #btnIniciar {
+            position:relative;
+            top:10em;
+            width:20em;
+            display:block; 
+            } 
+        #tituloInstrucciones {
+            position:relative;
+            top:7em;
+            width:400px;
+            height:80px;
+       }
+       #video {
+        position:relative;
+        top:9em;
+        width:500px;
+        height:300px;
+        display:block; 
+           }
+    
+       #btnJugar{
+        position:relative;
+        top:10em;
+        width:20em;
+        display:block; 
+       }
+       #tituloBarEscolar{
+        position:relative;
+        top:8em;
+        width:400px;
+        height:80px;
+       }
+       #BarEscolar{
+        position:relative;
+        top:9em;
+        width:500px;
+        height:700px;
+        display:block; 
+       }
+       #tituloPuntaje{
+        position:relative;
+        top:8em;
+        width:400px;
+        height:80px;
+       }
+      
+
+ 
+ 
+  
