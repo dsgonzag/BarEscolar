@@ -50,17 +50,19 @@ $.getJSON( "js/frutas.json", function( data ) {
   }) 
   conten.appendChild(celda); //agrega los avatares
   conten.appendChild(botellas);
+  var contaudio=0
    $(function() {
     $( ".draggable" ).draggable({ 
       helper: 'clone' ,
      drag: function(event, ui){
         datos.forEach(element=>{
-      
+      if($(this).attr("src")==element.rutaImg)
+      console.log("audio"+element.sonido)
+
+      if(contaudio==0){
             
-                 $( "#"+element.id).draggable({ 
-            drag: function(event, ui){
-         
-     }})
+        }
+        contaudio++
               $(this).append(element.id);
         }) 
      
@@ -81,12 +83,16 @@ $(function() {
      let existe=alimentoAñadidos.indexOf(ui.draggable.attr("src"))
 
      if(numeroAlimentos>=4){
+       
       alert("puntos ganados"+puntaje)
     }else{
       datos.forEach(element=>{
        
 
       if($(ui.draggable).attr("src")==element.rutaImg ){
+        var audio=document.createElement('audio');
+            audio.setAttribute('src',element.sonido); 
+            audio.play()
         if(element.categoria=="chatarra"){
           alert("Cuidado, comida chatarra")
         }else{
@@ -140,6 +146,9 @@ $(".contenedor2").droppable({
      
 
     if($(ui.draggable).attr("src")==element.rutaImg ){
+      var audio=document.createElement('audio');
+      audio.setAttribute('src',element.sonido); 
+      audio.play()
       if(numReguladores<1){
         if(element.categoria=="chatarra"){
           alert("Cuidado, comida chatarra")
@@ -192,7 +201,10 @@ $(".contenedor3").droppable({
      
 
     if($(ui.draggable).attr("src")==element.rutaImg ){
-      if(numEnergeticos<2){
+      var audio=document.createElement('audio');
+      audio.setAttribute('src',element.sonido); 
+      audio.play()
+      if(numEnergeticos<1){
         if(element.categoria=="chatarra"){
           alert("Cuidado, comida chatarra")
         }else{
@@ -352,4 +364,4 @@ $("#contenFrutas").droppable({
 //    alert( "dropped" );
 //  }
 //});
-//
+//  
