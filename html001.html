@@ -1,0 +1,59 @@
+<html>
+        <head>
+                <script src="jquery-1.10.1.min.js"></script>
+                </head>
+    <style>
+    table th, table td {
+    width: 200px;
+    height:70px;
+}
+table span {
+    display:block;
+    background-color: #ccc;
+    border: 1px solid black;
+    color: fff;
+    height: 30px;
+    width: 100%;
+}
+    </style>
+<script>
+$(document).ready(function () {
+    $('.event').on("dragstart", function (event) {
+        var dt = event.originalEvent.dataTransfer;
+        dt.setData('Text', $(this).attr('id'));
+    });
+    $('table td').on("dragenter dragover drop", function (event) {
+        event.preventDefault();
+        if (event.type === 'drop') {
+            var data = event.originalEvent.dataTransfer.getData('Text', $(this).attr('id'));
+            alert(data);
+            de = $('#' + data).detach();
+            de.appendTo($(this));
+
+        };
+    });
+})
+
+</script>
+
+    <table id="#our_table" border="1">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td><span class="event" id="item1" draggable="true">Item 1</span>
+            </td>
+            <td><span class="event" id="item2" draggable="true">Item 2</span>
+                <span class="event" id="item3" draggable="true">Item 3</span>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</html>
