@@ -6,7 +6,7 @@
   "id": "1",
   "puntaje": "-2",
   "categoria": "energeticos",
-  "sonido": "sonido/audio1.mp3",
+  "sonido": "audio/cocacola.mp3",
   "valorNutricional":"20%",
   "calorias":"20"
 },
@@ -16,7 +16,7 @@
   "id": "2",
   "puntaje": "-2",
   "categoria": "chatarra",
-  "sonido": "sonido/audio2.mp3",
+  "sonido": "audio/pizza.mp3",
   "valorNutricional":"20%",
   "calorias":"100"
  

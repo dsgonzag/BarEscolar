@@ -68,13 +68,7 @@ $.getJSON( "js/frutas.json", function( data ) {
     })
       
 });
-// $("img").hover(function(){
-//   $(this).css({" -webkit-filter":" drop-shadow(2px 2px 0 black) drop-shadow(-2px -2px 0 white)",
-//                "filter": "drop-shadow(2px 2px 0 black) drop-shadow(-2px -2px 0 white)"});
-//   }, function(){
-//   $(this).css( {" -webkit-filter":" drop-shadow(0px 0px 0 black) drop-shadow(0px 0px 0 white)",
-//   "filter": "drop-shadow(0px 0px 0 black) drop-shadow(0px 0px 0 white)"});
-// });
+
 $(function() {
   $(".contenedor").droppable({
     accept: '.draggable',
@@ -86,7 +80,9 @@ $(function() {
    
      let existe=alimentoAñadidos.indexOf(ui.draggable.attr("src"))
 
-    
+     if(numeroAlimentos>=4){
+      alert("puntos ganados"+puntaje)
+    }else{
       datos.forEach(element=>{
        
 
@@ -125,6 +121,7 @@ $(function() {
     }
     })
   }
+}
 });
 $(".contenedor2").droppable({
   accept: '.draggable',
@@ -136,7 +133,9 @@ $(".contenedor2").droppable({
  
    let existe=alimentoAñadidos.indexOf(ui.draggable.attr("src"))
 
-   
+   if(numeroAlimentos>=4){
+    alert("puntos ganados"+puntaje)
+  }else{
     datos.forEach(element=>{
      
 
@@ -174,6 +173,7 @@ $(".contenedor2").droppable({
   }
   })
 }
+}
 });
 $(".contenedor3").droppable({
   accept: '.draggable',
@@ -185,7 +185,9 @@ $(".contenedor3").droppable({
  
    let existe=alimentoAñadidos.indexOf(ui.draggable.attr("src"))
 
-   
+   if(numeroAlimentos>=4){
+    alert("puntos ganados"+puntaje)
+  }else{
     datos.forEach(element=>{
      
 
@@ -220,6 +222,7 @@ $(".contenedor3").droppable({
    return;
   }
   })
+}
 }
 });
 
@@ -349,4 +352,4 @@ $("#contenFrutas").droppable({
 //    alert( "dropped" );
 //  }
 //});
-//  
+//

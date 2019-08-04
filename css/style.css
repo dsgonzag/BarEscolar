@@ -243,4 +243,26 @@ margin-top:100px;
       background-size: 80px 100px !important;
   }
   }
+
+
+@media only screen and (max-width: 768px) {
+.botellas{
+     width: 50% !important;
+    background-size: 80px 100px !important;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.celda{
+     width: 50% !important;
+    background-size: 80px 100px !important;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.misfrutas{
+     width: 50% !important;
+    background-size: 80px 100px !important;
+}
+}
   
