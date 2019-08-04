@@ -1,4 +1,5 @@
-#imgFondo{
+
+  #imgFondo{
    
     background-image: url(../img/fondo.png);
     background-position: center center;
@@ -152,16 +153,14 @@
         width:400px;
         height:80px;
        }
- .misfrutas img{  
-     margin-right: 6%;
-     margin-left: 30px;
- 
+.misfrutas img{  
+     margin-right: 1%;
+    margin-left: 39px;
  }      
       
 #miprimerdiv{
- margin-top: 400px;
- margin-left: 90px;
-width: 90%;
+         margin-left: -55px;
+    width: 66%;
 }
 #misegundodiv{
     
@@ -169,15 +168,16 @@ width: 90%;
    }
 
  .draggable  {
-width: 40px;
-height: 50px;
-margin-top:100px;
+width: 33px;
+    height: 37px;
+    margin-top: 94px;
  }
  
  #contenFrutas{
-    background-image: url('../img/bar.png');
-    background-size: cover;
-    height: 787px;
+       background-image: url(../img/bar.png);
+    background-size: 434px 379px;
+    background-repeat: no-repeat;
+       height: 321px;
     width: auto;
  }
  .lonchera img{
@@ -206,63 +206,130 @@ margin-top:100px;
     background-repeat: no-repeat;
     background-position: top;
     position: relative;
-    width: 52%;
+    width: 32%;
    margin-bottom: 82px;
-    height: 69vh;
+    height: 39vh;
     left: 28%;
  }
  @media only screen and (max-width: 768px) {
     /* For mobile phones: */
       .lonchera{
-          width: 50% !important;
-      background-size: 40px 100px !important;
+          width: 100% !important;
+      background-size: 100px 100px !important;
+          
       }
   
   }
   
   
   
-  @media only screen and (max-width: 768px) {
-  .container-fluid row bar{
-       width: 70% !important;
-      background-size: 80px 100px !important;
-  }
-  }
-  
-  @media only screen and (max-width: 768px) {
-  .img-fluid{
-       width: 50% !important;
-      background-size: 80px 100px !important;
-  }
-  }
-  
-  
-  @media only screen and (max-width: 768px) {
-  .video-stream html5-main-video{
-       width: 50% !important;
-      background-size: 80px 100px !important;
-  }
-  }
+
 
 
 @media only screen and (max-width: 768px) {
-.botellas{
-     width: 50% !important;
-    background-size: 80px 100px !important;
+#contenFrutas{
+     width: 90% !important;
+    background-size:800px 600px !important;
+ background-repeat: no-repeat;
 }
 }
 
 @media only screen and (max-width: 768px) {
-.celda{
+.img-fluid{
      width: 50% !important;
-    background-size: 80px 100px !important;
-}
-}
-
-@media only screen and (max-width: 768px) {
-.misfrutas{
-     width: 50% !important;
-    background-size: 80px 100px !important;
-}
-}
   
+    
+  
+}
+    
+    .video-stream html5-main-video{
+     width: 50% !important;
+
+}
+    
+
+
+    
+    #puntajeletra{
+      width: 90% !important;
+  
+}
+    
+        #logo{
+      width:40% !important;
+  
+}
+    
+         #tituloBarEscolar{
+      width:80% !important;
+  
+}
+    
+    
+    #misegundodiv{
+      width: 80% !important;
+             margin-left: -20px;
+              
+}
+    
+    #miprimerdiv{
+         width: 90% !important;
+        margin-left: -32px;
+   
+   
+    }
+    
+    .draggable{
+  position: absolute;
+      top: 115px;
+    left: 32px;
+    margin: auto;
+        
+   
+    }
+.draggable:first-child{
+  position: absolute;
+
+    left: 52px;
+    margin: auto;
+        
+   
+    }
+        
+.draggable:nth-child(2){
+  position: absolute;
+ 
+    left: 136px;
+    margin: auto;
+        
+   
+    }
+.draggable:nth-child(3){
+  position: absolute;
+  
+    left: 186px;
+    margin: auto;
+        
+   
+    }
+
+.draggable:nth-child(4){
+  position: absolute;
+   
+    left: 260px;
+    margin: auto;
+        
+   
+    }
+
+
+.draggable:nth-child(5){
+  position: absolute;
+   
+    left: 330px;
+    margin: auto;
+        
+   
+    }
+
+}
