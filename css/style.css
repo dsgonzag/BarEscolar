@@ -1,4 +1,5 @@
-#imgFondo{
+
+  #imgFondo{
    
     background-image: url(../img/fondo.png);
     background-position: center center;
@@ -204,8 +205,13 @@ width: 33px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+<<<<<<< HEAD
  
     width: 50%;
+=======
+    position: relative;
+    width: 32%;
+>>>>>>> 0227a5f694357ebb0f913feaf08605376f161cf6
    margin-bottom: 82px;
     height: 39vh;
     left: 28%;
@@ -214,9 +220,13 @@ width: 33px;
     /* For mobile phones: */
       .lonchera{
           width: 100% !important;
+<<<<<<< HEAD
       background-size: 450px 280px !important;
           
        
+=======
+      background-size: 100px 100px !important;
+>>>>>>> 0227a5f694357ebb0f913feaf08605376f161cf6
           
       }
   
@@ -268,6 +278,7 @@ width: 33px;
     
     
     #misegundodiv{
+<<<<<<< HEAD
       width: 40% !important;
              margin-left: -20px;
               
@@ -336,3 +347,71 @@ left: 171px;
 
 
   
+=======
+      width: 80% !important;
+             margin-left: -20px;
+              
+}
+    
+    #miprimerdiv{
+         width: 90% !important;
+        margin-left: -32px;
+   
+   
+    }
+    
+    .draggable{
+  position: absolute;
+      top: 115px;
+    left: 32px;
+    margin: auto;
+        
+   
+    }
+.draggable:first-child{
+  position: absolute;
+
+    left: 52px;
+    margin: auto;
+        
+   
+    }
+        
+.draggable:nth-child(2){
+  position: absolute;
+ 
+    left: 136px;
+    margin: auto;
+        
+   
+    }
+.draggable:nth-child(3){
+  position: absolute;
+  
+    left: 186px;
+    margin: auto;
+        
+   
+    }
+
+.draggable:nth-child(4){
+  position: absolute;
+   
+    left: 260px;
+    margin: auto;
+        
+   
+    }
+
+
+.draggable:nth-child(5){
+  position: absolute;
+   
+    left: 330px;
+    margin: auto;
+        
+   
+    }
+
+}
+>>>>>>> 0227a5f694357ebb0f913feaf08605376f161cf6
