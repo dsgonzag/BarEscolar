@@ -48,7 +48,7 @@ $.getJSON( "js/frutas.json", function( data ) {
   }
   datos.push(element)  
   }) 
-  conten.appendChild(celda); //agrega los avatares
+  conten.appendChild(celda); 
   conten.appendChild(botellas);
   var contaudio=0
    $(function() {
@@ -82,9 +82,16 @@ $(function() {
    
      let existe=alimentoAñadidos.indexOf(ui.draggable.attr("src"))
 
-     if(numeroAlimentos>=4){
-       
-      alert("puntos ganados"+puntaje)
+     if(numeroAlimentos>=4 && puntaje>=20){
+      alert("Puntos ganados: "+puntaje)
+         audio.play()
+          if (confirm("Desea volver a jugar presione Aceptar!")) {
+            location.reload();
+          } else {
+            window.location.href = "index.html";
+          }
+ 
+//         window.open("Puntaje.html")
     }else{
       datos.forEach(element=>{
        
@@ -95,25 +102,35 @@ $(function() {
             audio.play()
         if(element.categoria=="chatarra"){
           alert("Cuidado, comida chatarra")
+           audio.play()//puse            
+
         }else{
-          var audiohamburguesa = document.createElement('audio');
-           audiohamburguesa.setAttribute('src', 'audio/hamburguesa.mp3'); 
-           audiohamburguesa.play()
+            audio.play()
+            alert("BIEN!")//puse            
+        /* var audioplay = document.createElement('audio');
+           audioplay.setAttribute('src', 'audio/acierto.mp3'); 
+           audioplay.play()*/
         }
         if(numConstructores<2){
         ui.draggable.addClass("contenedor")
         ui.draggable.addClass("extraible")
         $(".contenedor").append(ui.draggable);
         numConstructores++;
-
-        
-       
          alimentoAñadidos.push(element.rutaImg)
          numeroAlimentos++
       puntaje+=element.puntaje
+      
+             if(numeroAlimentos>=4 && puntaje>=20){
+      alert("Juego terminado: "+puntaje)
+                   if (confirm("Desea volver a jugar presione Aceptar!")) {
+            location.reload();
+          } else {
+            window.location.href = "index.html";
+          }
+    }
     }else{
       
-      if(numeroAlimentos>=3){
+      if(numeroAlimentos>=4){//era 3
         alert("puntos ganados"+puntaje)
       }
       $("#miprimerdiv").append(ui.draggable); 
@@ -139,8 +156,14 @@ $(".contenedor2").droppable({
  
    let existe=alimentoAñadidos.indexOf(ui.draggable.attr("src"))
 
-   if(numeroAlimentos>=4){
-    alert("puntos ganados"+puntaje)
+    if(numeroAlimentos>=4 && puntaje>=20){
+      alert("puntos ganados: "+puntaje)
+        audio.play()
+          if (confirm("Desea volver a jugar presione Aceptar!")) {
+            location.reload();
+          } else {
+            window.location.href = "index.html";
+          }
   }else{
     datos.forEach(element=>{
      
@@ -152,21 +175,32 @@ $(".contenedor2").droppable({
       if(numReguladores<1){
         if(element.categoria=="chatarra"){
           alert("Cuidado, comida chatarra")
+            audio.play()
         }else{
-          var audiohamburguesa = document.createElement('audio');
-           audiohamburguesa.setAttribute('src', 'audio/hamburguesa.mp3'); 
-           audiohamburguesa.play()
+          audio.play()   
+            alert("BIEN!")
+          /*var audioplay = document.createElement('audio');
+           audioplay.setAttribute('src', 'audio/'+element.mombre+'.mp3'); 
+           audioplay.play()*/
         }
         ui.draggable.addClass("contenedor2")
       $(".contenedor2").append(ui.draggable);
       numReguladores++;
       numeroAlimentos++
-      if(numeroAlimentos>=4){
-        alert("Juego terminad")
-      }
+     
      ui.draggable.addClass("extraible")
        alimentoAñadidos.push(element.rutaImg)
     puntaje+=element.puntaje
+      
+          
+       if(numeroAlimentos>=4 && puntaje>=20){
+      alert("Juego terminado: "+puntaje)
+             if (confirm("Desea volver a jugar presione Aceptar!")) {
+            location.reload();
+          } else {
+            window.location.href = "index.html";
+          }
+    }
   }else{
   
     
@@ -194,8 +228,14 @@ $(".contenedor3").droppable({
  
    let existe=alimentoAñadidos.indexOf(ui.draggable.attr("src"))
 
-   if(numeroAlimentos>=4){
-    alert("puntos ganados"+puntaje)
+     if(numeroAlimentos>=4 && puntaje>=20){
+      alert("puntos ganados: "+ puntaje)
+       audio.play()
+           if (confirm("Desea volver a jugar presione Aceptar!")) {
+            location.reload();
+          } else {
+            window.location.href = "index.html";
+          }
   }else{
     datos.forEach(element=>{
      
@@ -203,25 +243,39 @@ $(".contenedor3").droppable({
     if($(ui.draggable).attr("src")==element.rutaImg ){
       var audio=document.createElement('audio');
       audio.setAttribute('src',element.sonido); 
-      audio.play()
-      if(numEnergeticos<1){
+      
+      if(numEnergeticos<2){
         if(element.categoria=="chatarra"){
           alert("Cuidado, comida chatarra")
+          audio.play()  
         }else{
-          var audiohamburguesa = document.createElement('audio');
-           audiohamburguesa.setAttribute('src', 'audio/hamburguesa.mp3'); 
-           audiohamburguesa.play()
+            audio.play()
+           alert("BIEN!")
+         /* var audioplay = document.createElement('audio');
+           audioplay.setAttribute('src', 'audio/'+element.mombre+'.mp3'); 
+           audioplay.play()*/
         }
         ui.draggable.addClass("contenedor3")
       $(".contenedor3").append(ui.draggable);
       numEnergeticos++;
-      
+      numeroAlimentos++
      ui.draggable.addClass("extraible")
        alimentoAñadidos.push(element.rutaImg)
     puntaje+=element.puntaje
+    /////////////////////////////////////////
+       if(numeroAlimentos>=4 && puntaje>=20){
+      alert("Juego terminado: "+puntaje)
+             if (confirm("Desea volver a jugar presione Aceptar!")) {
+            location.reload();
+          } else {
+            window.location.href = "index.html";
+          }
+    }
+   
+          /////////////////////////////////
   }else{
     if(numeroAlimentos>=4){
-      alert("Juego terminad")
+      alert("Juego terminad"+puntaje)//+puntaje
     }
    
     $("#miprimerdiv").append(ui.draggable); 
@@ -279,89 +333,3 @@ $("#contenFrutas").droppable({
     
 
 });
-
-//
-//// * Función que se ejecuta al arrastrar el elemento. 
-//
-// function start(e) {
-//    e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
-//    e.dataTransfer.setData("Text", e.target.id); // Coje el elemento que se va a mover
-//    e.target.style.opacity = '0.4'; 
-//}
-//
-//// /**
-//// * Función que se ejecuta se termina de arrastrar el elemento. 
-//// **/
-// function end(e){
-//    e.target.style.opacity = ''; // Restaura la opacidad del elemento           
-//     e.dataTransfer.clearData("Data");           
-// }
-//
-//// /**
-//// * Función que se ejecuta cuando un elemento arrastrable entra en el elemento desde del que se llama. 
-//// **/
-// function enter(e) {
-//     return true;
-// }
-//
-//// /**
-//// * Función que se ejecuta cuando un elemento arrastrable esta sobre el elemento desde del que se llama. 
-//// * Devuelve false si el objeto se puede soltar en ese elemento y true en caso contrario.
-//// **/
-// function over(e) {
-//    if ((e.target.className == "contenedorPieza") || (e.target.id == "contenedorPiezas"))
-//         return false;
-//     else
-//     return true;
-// }
-//    
-// /**
-// * Función que se ejecuta cuando un elemento arrastrable se suelta sobre el elemento desde del que se llama. 
-// **/
-// function drop(e){
-//     e.preventDefault(); // Evita que se ejecute la accion por defecto del elemento soltado.
-//     var elementoArrastrado = e.dataTransfer.getData("Text");
-//     e.target.appendChild(document.getElementById(elementoArrastrado)); // Coloca el elemento soltado sobre el elemento desde el que se llamo esta funcion
-//     comprobarPuzzle();
-// }
-//
-// function comprobarPuzzle(){
-//     if((document.getElementById('pieza1').parentNode.id=='uno') &&
-//         (document.getElementById('pieza2').parentNode.id=='dos') &&
-//         (document.getElementById('pieza3').parentNode.id=='tres') &&
-//         (document.getElementById('pieza4').parentNode.id=='cuatro') &&
-//         (document.getElementById('pieza5').parentNode.id=='cinco') &&
-//         (document.getElementById('pieza6').parentNode.id=='seis')) &&
-//         (document.getElementById('pieza7').parentNode.id=='siete') &&
-//         (document.getElementById('pieza8').parentNode.id=='ocho') &&
-//         (document.getElementById('pieza9').parentNode.id=='nueve') &&
-//         (document.getElementById('pieza10').parentNode.id=='diez') 
-//     {
-//         alert('Felicidades, has hecho el puzzle.');
-//     }
-//     else
-//     {
-//         document.getElementById("resultado").innerHTML = "INCOMPLETO";
-//     }
-// }
-//
-//// /**
-//// * Muestra un mensaje de advertencia si el navegador no soporta Drag & Drop. (En Windows no lo soportan ni IE ni Safari)
-//// **/
-// function comprobarnavegador() {
-//     if( 
-//         (navigator.userAgent.toLowerCase().indexOf('msie ') > -1) || 
-//         ((navigator.userAgent.toLowerCase().indexOf('safari') > -1) && (navigator.userAgent.toLowerCase().indexOf('chrome') == -1)))
-//     {
-//         alert("Tu navegador no soporta correctamente las funciones Drag & Drop de HTML5. Prueba con otro navegador.");
-//     }
-//
-// } */
-//
-//$( "#draggable" ).draggable();
-//$( "#droppable" ).droppable({
-//  drop: function() {
-//    alert( "dropped" );
-//  }
-//});
-//  

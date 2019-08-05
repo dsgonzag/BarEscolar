@@ -1,112 +1,114 @@
 [
     {
 
-  "mombre": "agua",
+  "mombre": "cake",
   "rutaImg":"img/cake.png",
   "id": "1",
-  "puntaje": "-2",
+  "puntaje": "5",
   "categoria": "energeticos",
-  "sonido": "audio/cocacola.mp3",
+  "sonido": "audio/cake.mp3",
   "valorNutricional":"20%",
   "calorias":"20"
 },
+
     {
-    "mombre": "cake.png",
-   "rutaImg":"img/cola.png",
+    "mombre": "leche",
+   "rutaImg":"img/leche.png",
   "id": "2",
-  "puntaje": "-2",
-  "categoria": "chatarra",
-  "sonido": "audio/pizza.mp3",
+  "puntaje": "5",
+  "categoria": "constructores",
+  "sonido": "audio/leche.mp3",
   "valorNutricional":"20%",
   "calorias":"100"
  
     },
 
     {
-    "mombre": "cola.png",
-    "rutaImg":"img/leche.png",
+    "mombre": "cola",
+    "rutaImg":"img/cola.png",
   "id": "3",
-  "puntaje": 25,
-  "categoria": "constructores",
-  "sonido": "sonido/audio2.mp3",
+  "puntaje": "-2",
+  "categoria": "chatarra",
+  "sonido": "audio/cola.mp3",
   "valorNutricional":"20%",
   "calorias":"20"
  
     },
     
     {
-    "mombre": "guineo.png",
-    "rutaImg":"img/sandia.png",
+    "mombre": "guineo",
+    "rutaImg":"img/guineo.png",
   "id": "4",
   "puntaje": "5",
   "categoria": "reguladores",
-  "sonido": "sonido/audio1.mp3",
+  "sonido": "audio/guineo.mp3",
   "valorNutricional":"20%",
   "calorias":"20"
  
     },
         {
-    "mombre": "agua.png",
+    "mombre": "tostada",
     "rutaImg":"img/tostada.png",
   "id": "5",
   "puntaje": 5,
   "categoria": "energeticos",
-  "sonido": "sonido/audio1.mp3",
+  "sonido": "audio/tostada.mp3",
   "valorNutricional":"20%",
   "calorias":"20"
 
     },
         {
-    "mombre": "agua.png",
+    "mombre": "yogurt",
     "rutaImg":"img/yogurt.png",
   "id": "6",
   "puntaje": 5,
   "categoria": "constructores",
-  "sonido": "sonido/audio1.mp3",
+  "sonido": "audio/yogurt.mp3",
   "valorNutricional":"20%",
   "calorias":"20"
  
     },
-        {
-    "mombre": "agua.png",
-    "rutaImg":"img/guineo.png",
+         {
+
+  "mombre": "sandia",
+  "rutaImg":"img/sandia.png",
   "id": "7",
-  "puntaje": 5,
+  "puntaje": "5",
   "categoria": "reguladores",
-  "sonido": "sonido/audio1.mp3",
+  "sonido": "audio/sandia.mp3",
   "valorNutricional":"20%",
   "calorias":"20"
- 
-    },
+},
+        
         {
-    "mombre": "agua.png",
+    "mombre": "hotdog",
     "rutaImg":"img/hotdog.png",
   "id": "8",
   "puntaje": -2,
   "categoria": "chatarra",
-  "sonido": "sonido/audio1.mp3",
+  "sonido": "audio/hotdog.mp3",
   "valorNutricional":"0%",
   "calorias":"20"
  
     },
         {
-    "mombre": "agua.png",
+    "mombre": "manzana",
     "rutaImg":"img/manzana.png",
   "id": "9",
   "puntaje": 5,
   "categoria": "reguladores",
-  "sonido": "sonido/audio1.mp3",
+  "sonido": "audio/manzana.mp3",
   "valorNutricional":"30%",
   "calorias":"20"
  
     },
         {
-    "mombre": "agua.png",
+    "mombre": "agua",
     "rutaImg":"img/agua.png",
   "id": "10",
   "puntaje": 5,
   "categoria": "constructores",
-  "sonido": "sonido/audio1.mp3",
+  "sonido": "audio/agua.mp3",
   "valorNutricional":"20%",
   "calorias":"20"
  

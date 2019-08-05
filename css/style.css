@@ -38,8 +38,8 @@
        #video {
         position:relative;
         top:9em;
-        width:500px;
-        height:300px;
+        width:800px;
+        height:500px;
         display:block; 
            }
     
@@ -51,7 +51,7 @@
        }
        #tituloBarEscolar{
         position:relative;
-        top:5em;
+        top:110px;
         width:700px;
         height:150px;
        }
@@ -159,7 +159,7 @@
  }      
       
 #miprimerdiv{
-         margin-left: -55px;
+    margin-left: -55px;
     width: 66%;
 }
 #misegundodiv{
@@ -179,6 +179,7 @@ width: 33px;
     background-repeat: no-repeat;
        height: 321px;
     width: auto;
+    margin-top: 100px;
  }
  .lonchera img{
     height: 50px;
@@ -281,6 +282,7 @@ width: 33px;
 <<<<<<< HEAD
       width: 40% !important;
              margin-left: -20px;
+        
               
 }
     
@@ -415,3 +417,4 @@ left: 171px;
 
 }
 >>>>>>> 0227a5f694357ebb0f913feaf08605376f161cf6
+

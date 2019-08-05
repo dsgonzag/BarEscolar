@@ -2,14 +2,14 @@
 <html> 
     <head>
       <meta charset="utf-8">
-      <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<!--      <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
       <title>BAR ESCOLAR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <!-- CSS -->
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="./css/responsive.css">
       <link href="css/bootstrap.min.css" rel="stylesheet" > 
-         <script src="jquery-1.10.1.min.js"></script>
+         <script src="js/jquery-1.10.1.min.js"></script>
         
         <script src = "https://code.jquery.com/jquery-1.7.2.min.js" ></script>
     <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
@@ -18,6 +18,12 @@
       
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         
+        <script>
+            function myFunction()
+            {
+                location.reload();
+            }
+        </script>
    <!--Logo-->
     </head>
 <div>
@@ -34,20 +40,18 @@
              </div>
            </nav>
      </header>
-   <body >
+   <body>
       
         <!-- sección de intro-->
-          
-              
                         <img class="img-fluid" src="img/tituloBarEscolar.png" id="tituloBarEscolar">
-                      
-                       
-                             
+             
                              <!-- <img class="img-fluid" src="img/bar.png" id="BarEscolar"> -->
+           
                              <div class="container-fluid row bar " id="contenFrutas">
                                      
                              </div>
-                             <div class="">
+               
+                             <div style="text-align: : center">
                                <div class="row">
                                  <div class="col-md-6">
                                    <h1 id=""style="display: inline-block;">Puntaje:</h1>
@@ -55,11 +59,17 @@
                                  </div>
 
                                </div>
+       
                                <div id="lonchera1"  class="lonchera">
-                                  <div class="row ">
-                                     <div class="contenedor col-md-6"  width=50%></div>
-                                  
+                                  <div class="row">
+                                     <div class="contenedor col-md-2"  width=50%>
+                                         
+                                      </div>
+
                                   </div>
+                                  
+                                  
+                                  
                                   <div class="row col-md-6">
                                     
                                   <div class="contenedor2 col-md-6"  width=50%></div> 
@@ -68,15 +78,10 @@
                                 
                                   </div>
                                    </div>
-                             </div>
+                                 <input type="submit" onclick="myFunction()" value="Volver a jugar">
+                            </div>
                           
 
-               
-                         
-                      
-                         
-                              
-                       
                         <!-- <div>
                           <img class="img-fluid" src="img/lonchera.png" id="lonchera">
                     </div> -->
@@ -97,9 +102,7 @@
            <script type="text/javascript" src="js/classFrutas.js"></script>
            
           <script src="js/bootstrap.min.js"></script>
-   
 
-    
    </body>
    
 </html>	 
