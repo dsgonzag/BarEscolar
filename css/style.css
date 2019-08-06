@@ -78,7 +78,7 @@
         height: 125px;
         background: #999;
         color: #fff;
-        padding: 10px;
+        padding: 5px;
       }
 
 
@@ -196,10 +196,10 @@ width: 33px;
     width:100%;
  } 
  .contenedor3{
-    margin-top: 25%;
+    margin-top: 10%;
  }
  #lonchera1{
-    background-image: url(../img/lonchera.png);
+    background-image: url(../img/loncherac.jpg);
    
     /* background: #d0eb6a; */
     display: flex;
@@ -208,7 +208,7 @@ width: 33px;
     background-position: top;
 <<<<<<< HEAD
  
-    width: 50%;
+    width: 25%;
 =======
     position: relative;
     width: 32%;
@@ -220,13 +220,13 @@ width: 33px;
  @media only screen and (max-width: 768px) {
     /* For mobile phones: */
       .lonchera{
-          width: 100% !important;
+          width: 50% !important;
 <<<<<<< HEAD
-      background-size: 450px 280px !important;
+      background-size: 100px 100px !important;
           
        
 =======
-      background-size: 100px 100px !important;
+      background-size: 50px 50px !important;
 >>>>>>> 0227a5f694357ebb0f913feaf08605376f161cf6
           
       }

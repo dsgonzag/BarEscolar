@@ -244,7 +244,7 @@ $(".contenedor3").droppable({
       var audio=document.createElement('audio');
       audio.setAttribute('src',element.sonido); 
       
-      if(numEnergeticos<2){
+      if(numEnergeticos<1){
         if(element.categoria=="chatarra"){
           alert("Cuidado, comida chatarra")
           audio.play()  

@@ -6,7 +6,7 @@
   "id": "1",
   "puntaje": "5",
   "categoria": "energeticos",
-  "sonido": "audio/cake.mp3",
+  "sonido": "audio/cake.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
 },
@@ -17,7 +17,7 @@
   "id": "2",
   "puntaje": "5",
   "categoria": "constructores",
-  "sonido": "audio/leche.mp3",
+  "sonido": "audio/leche.mp4",
   "valorNutricional":"20%",
   "calorias":"100"
  
@@ -29,7 +29,7 @@
   "id": "3",
   "puntaje": "-2",
   "categoria": "chatarra",
-  "sonido": "audio/cola.mp3",
+  "sonido": "audio/cola.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
  
@@ -41,7 +41,7 @@
   "id": "4",
   "puntaje": "5",
   "categoria": "reguladores",
-  "sonido": "audio/guineo.mp3",
+  "sonido": "audio/guineo.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
  
@@ -52,7 +52,7 @@
   "id": "5",
   "puntaje": 5,
   "categoria": "energeticos",
-  "sonido": "audio/tostada.mp3",
+  "sonido": "audio/tostada.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
 
@@ -63,7 +63,7 @@
   "id": "6",
   "puntaje": 5,
   "categoria": "constructores",
-  "sonido": "audio/yogurt.mp3",
+  "sonido": "audio/yogurt.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
  
@@ -75,7 +75,7 @@
   "id": "7",
   "puntaje": "5",
   "categoria": "reguladores",
-  "sonido": "audio/sandia.mp3",
+  "sonido": "audio/sandia.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
 },
@@ -86,7 +86,7 @@
   "id": "8",
   "puntaje": -2,
   "categoria": "chatarra",
-  "sonido": "audio/hotdog.mp3",
+  "sonido": "audio/hotdog.mp4",
   "valorNutricional":"0%",
   "calorias":"20"
  
@@ -97,7 +97,7 @@
   "id": "9",
   "puntaje": 5,
   "categoria": "reguladores",
-  "sonido": "audio/manzana.mp3",
+  "sonido": "audio/manzana.mp4",
   "valorNutricional":"30%",
   "calorias":"20"
  
@@ -108,7 +108,7 @@
   "id": "10",
   "puntaje": 5,
   "categoria": "constructores",
-  "sonido": "audio/agua.mp3",
+  "sonido": "audio/agua.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
  
