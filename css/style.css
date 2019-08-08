@@ -173,6 +173,14 @@ width: 33px;
     margin-top: 94px;
  }
  
+
+ .leftFrutas{
+position: relative;
+left: 36%;
+
+ }
+
+
  #contenFrutas{
        background-image: url(../img/bar.png);
     background-size: 434px 379px;
@@ -198,6 +206,16 @@ width: 33px;
  .contenedor3{
     margin-top: 10%;
  }
+.contenedor{
+
+  
+  
+}
+
+
+
+
+
  #lonchera1{
     background-image: url(../img/loncherac.jpg);
    

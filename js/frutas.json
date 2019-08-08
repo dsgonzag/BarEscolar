@@ -1,6 +1,5 @@
 [
     {
-
   "mombre": "cake",
   "rutaImg":"img/cake.png",
   "id": "1",
@@ -9,8 +8,8 @@
   "sonido": "audio/cake.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
+         ,"seccion":"miprimerdiv"
 },
-
     {
     "mombre": "leche",
    "rutaImg":"img/leche.png",
@@ -20,9 +19,8 @@
   "sonido": "audio/leche.mp4",
   "valorNutricional":"20%",
   "calorias":"100"
- 
+  ,"seccion":"miprimerdiv"
     },
-
     {
     "mombre": "cola",
     "rutaImg":"img/cola.png",
@@ -32,9 +30,8 @@
   "sonido": "audio/cola.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
- 
-    },
-    
+  ,"seccion":"miprimerdiv"
+    }, 
     {
     "mombre": "guineo",
     "rutaImg":"img/guineo.png",
@@ -44,7 +41,7 @@
   "sonido": "audio/guineo.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
- 
+  ,"seccion":"miprimerdiv"
     },
         {
     "mombre": "tostada",
@@ -55,6 +52,7 @@
   "sonido": "audio/tostada.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
+   ,"seccion":"miprimerdiv"
 
     },
         {
@@ -66,10 +64,9 @@
   "sonido": "audio/yogurt.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
- 
+ ,"seccion":"misegundodiv"
     },
          {
-
   "mombre": "sandia",
   "rutaImg":"img/sandia.png",
   "id": "7",
@@ -78,8 +75,8 @@
   "sonido": "audio/sandia.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
-},
-        
+              ,"seccion":"misegundodiv"
+},      
         {
     "mombre": "hotdog",
     "rutaImg":"img/hotdog.png",
@@ -89,7 +86,7 @@
   "sonido": "audio/hotdog.mp4",
   "valorNutricional":"0%",
   "calorias":"20"
- 
+  ,"seccion":"misegundodiv"
     },
         {
     "mombre": "manzana",
@@ -100,7 +97,7 @@
   "sonido": "audio/manzana.mp4",
   "valorNutricional":"30%",
   "calorias":"20"
- 
+  ,"seccion":"misegundodiv"
     },
         {
     "mombre": "agua",
@@ -111,6 +108,6 @@
   "sonido": "audio/agua.mp4",
   "valorNutricional":"20%",
   "calorias":"20"
- 
+  ,"seccion":"misegundodiv"
     }
  ]

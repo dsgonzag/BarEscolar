@@ -6,6 +6,8 @@
       <title>BAR ESCOLAR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <!-- CSS -->
+        <link rel="stylesheet" href="./css/sweetalert2.min.css">
+        <script src="js/sweetalert2.min.js"></script>
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="./css/responsive.css">
       <link href="css/bootstrap.min.css" rel="stylesheet" > 
@@ -24,38 +26,36 @@
                 location.reload();
             }
         </script>
-   <!--Logo-->
+   
     </head>
+    <audio src="audio/juego.mp4" autoplay type="audio/mpeg"></audio>
 <div>
   
 </div>
-    <header><!-- Cabecera del sitio: Menú del juego-->
-         <nav class="navbar navbar-default">
-             <div class="container-fluid">
-             
-                <div class="navbar-header">
-                    <a href="index.html"><img class="img-fluid" id="logo" src="img/logo.png" alt="Logo"> </a>
-                 </div>
-              
-             </div>
-           </nav>
-     </header>
+
    <body>
+    
+
+       
+
+     
+      <center>
+          
       
-        <!-- sección de intro-->
+     
                         <img class="img-fluid" src="img/tituloBarEscolar.png" id="tituloBarEscolar">
-             
-                             <!-- <img class="img-fluid" src="img/bar.png" id="BarEscolar"> -->
+
            
-                             <div class="container-fluid row bar " id="contenFrutas">
+                             <div class="container-fluid row bar leftFrutas" id="contenFrutas">
                                      
                              </div>
                
-                             <div style="text-align: : center">
+                             <div >
                                <div class="row">
                                  <div class="col-md-6">
                                    <h3 id=""style="display: inline-block;">Puntaje:</h3>
                                    <h3 id="puntaje"style="display: inline-block;"></h3>
+                                     <br><input type="submit" onclick="myFunction()" value="Volver a jugar">
                                  </div>
 
                                </div>
@@ -63,7 +63,7 @@
        
                                <div id="lonchera1"  class="lonchera">
                                   <div class="row">
-                                     <div class="contenedor col-md-2"  width=50%>
+                                     <div class="contenedor col-md-4"  width=50%>
                                          
                                       </div>
 
@@ -81,10 +81,10 @@
                                 
                                   </div>
                                    </div>
-                                 <input type="submit" onclick="myFunction()" value="Volver a jugar">
+                                 
                             </div>
                           
-
+ 
                         <!-- <div>
                           <img class="img-fluid" src="img/lonchera.png" id="lonchera">
                     </div> -->
@@ -97,7 +97,7 @@
                    <a id="descargarjson" href="#" style="color:red; font-weight: 600;">Exportar JSON</a></button>
         </div> -->
    
-  
+  </center>
        
     
            <script type="text/javascript" src="js/main.js"></script>
@@ -105,7 +105,7 @@
            <script type="text/javascript" src="js/classFrutas.js"></script>
            
           <script src="js/bootstrap.min.js"></script>
-
+   
    </body>
    
 </html>	 
