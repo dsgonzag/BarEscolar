@@ -1,5 +1,4 @@
-
-  #imgFondo{
+#imgFondo{
    
     background-image: url(../img/fondo.png);
     background-position: center center;
@@ -230,7 +229,7 @@ height : 200px;
     width: 25%;
 =======
     position: relative;
-    width: 50%;
+    width: 20%;
 >>>>>>> 0227a5f694357ebb0f913feaf08605376f161cf6
    margin-bottom: 62px;
     height: 39vh;
@@ -439,3 +438,4 @@ left: 171px;
 
 }
 >>>>>>> 0227a5f694357ebb0f913feaf08605376f161cf6
+
