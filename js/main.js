@@ -180,7 +180,7 @@ $(function() {
    else
     {
               $("#"+element.seccion).append(ui.draggable); 
-              alert("Debe escoger un alimento tipo Constructor.");
+           //   alert("Debe escoger un alimento tipo Constructor.");
             //PONER AUDIO QUE DIGA 'Debe escoger un alimento tipo Constructor'
     }    
     document.getElementById("puntaje").innerHTML= puntaje.toString()
