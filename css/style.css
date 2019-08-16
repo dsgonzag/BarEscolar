@@ -64,7 +64,7 @@
         
        }
        #draggable {
-           position:fixed;
+           position:absolute;
         width: 100px;
         height: 100px;
         background: #ccc;
@@ -72,13 +72,13 @@
       }
       #droppable {
         position: absolute;
-        left: 250px;
+        left: 100px;
         top: 0;
-        width: 125px;
-        height: 125px;
+        width: 150px;
+        height: 150px;
         background: #999;
         color: #fff;
-        padding: 5px;
+        padding: 2px;
       }
 
 
@@ -198,7 +198,7 @@ left: 36%;
     position: relative;
     left: 107px;
     top: 49px;
-    margin-left: 6px;
+    
   }
  .lonchera div{
     height : 120px;
@@ -223,29 +223,29 @@ left: 36%;
     /* background: #d0eb6a; */
     display: flex;
     background-size: cover;
-    background-repeat: no-repeat;
+ 
     background-position: top;
 <<<<<<< HEAD
  
     width: 25%;
 =======
     position: relative;
-    width: 32%;
+    width: 22%;
 >>>>>>> 0227a5f694357ebb0f913feaf08605376f161cf6
-   margin-bottom: 82px;
+   margin-bottom: 62px;
     height: 39vh;
-    left: 28%;
+    left: 10%;
  }
  @media only screen and (max-width: 768px) {
     /* For mobile phones: */
       .lonchera{
-          width: 50% !important;
+          width: 80% !important;
 <<<<<<< HEAD
       background-size: 100px 100px !important;
           
        
 =======
-      background-size: 50px 50px !important;
+      background-size: 20px 20px !important;
 >>>>>>> 0227a5f694357ebb0f913feaf08605376f161cf6
           
       }
@@ -260,14 +260,15 @@ left: 36%;
 @media only screen and (max-width: 768px) {
 #contenFrutas{
      width: 90% !important;
-    background-size:800px 600px !important;
+   
  background-repeat: no-repeat;
+    
 }
 }
 
 @media only screen and (max-width: 768px) {
 .img-fluid{
-     width: 50% !important;
+     width: 20% !important;
   
     
   
@@ -316,7 +317,7 @@ left: 36%;
   position: absolute;
       top: 115px;
         left: 216px;
-    margin: auto;
+   
         
    
     }
