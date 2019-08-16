@@ -51,24 +51,24 @@
        }
        #tituloBarEscolar{
         position:relative;
-        top:110px;
+       
         width:700px;
         height:150px;
        }
        #BarEscolar{
         position:relative;
-        top:5em;
+    
        
         width:500px;
         height:600px;
-        display:block; 
+        
        }
        #draggable {
            position:fixed;
         width: 100px;
         height: 100px;
         background: #ccc;
-        z-index: 2;
+        z-index: 1;
       }
       #droppable {
         position: absolute;
@@ -159,18 +159,18 @@
  }      
       
 #miprimerdiv{
-    margin-left: -55px;
+   
     width: 66%;
 }
 #misegundodiv{
     
-    width: 100%;
+    width: 60%;
    }
 
  .draggable  {
 width: 33px;
     height: 37px;
-    margin-top: 94px;
+   
  }
  
 
@@ -187,12 +187,13 @@ left: 36%;
     background-repeat: no-repeat;
        height: 321px;
     width: auto;
-    margin-top: 100px;
+      position: relative;
+    
  }
  .lonchera img{
     height: 50px;
     background-position: center;
-    z-index: 99999;
+    z-index: 1;
     margin: 0;
     position: relative;
     left: 107px;
@@ -292,6 +293,7 @@ left: 36%;
     
          #tituloBarEscolar{
       width:80% !important;
+             
   
 }
     
@@ -306,8 +308,7 @@ left: 36%;
     
     #miprimerdiv{
          width: 90% !important;
-        margin-left: -32px;
-   
+        
    
     }
     

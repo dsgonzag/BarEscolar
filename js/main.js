@@ -8,12 +8,7 @@ $(document).ready(function() {
     var numeroAlimentos=0
     var numConstructores=0, numEnergeticos=0, numReguladores=0;
     document.getElementById("puntaje").innerHTML= puntaje.toString()
-    // arrayDiv.push(document.getElementById("3"))
-    // arrayDiv.push( document.getElementById("4"))
-    // arrayDiv.push( document.getElementById("5"))
-    // arrayDiv.push(document.getElementById("6"))
-    // arrayDiv.push(document.getElementById("7"))
-    // arrayDiv.push(document.getElementById("8"))
+    
     cont=0;
 $.getJSON( "js/frutas.json", function( data ) {
     var conten=document.getElementById("contenFrutas");
@@ -92,20 +87,19 @@ $(function() {
                               title:  'Bien Hecho, ganaste!',
                               text:  'Tu puntaje es:  ' +puntaje ,
                               imageUrl: 'img/premioo.png',
-                              imageWidth: 400,
-                              imageHeight:400,
+                              imageWidth: 200,
+                              imageHeight:200,
                               imageAlt: 'Custom image',
-                              animation: true
+                       
+                              animation: true,
+                        customClass: {
+                                 popup: 'animated tada'
+                             }
                             })
-      //alert("Puntos ganados: "+puntaje)
+    
          audio.play()
-        /*  if (confirm("Desea volver a jugar presione Aceptar!")) {
-            location.reload();
-          } else {
-            window.location.href = "index.html";
-          }*/
- 
-//         window.open("Puntaje.html")
+   
+         
     }else{
       datos.forEach(element=>{
        
@@ -138,7 +132,7 @@ $(function() {
          numeroAlimentos++
       puntaje+=element.puntaje
       
-             if(numeroAlimentos>=4 && puntaje>=20){
+             if(numeroAlimentos>=4 /*&& puntaje>=20*/){
             //alert("Juego terminado: "+puntaje)
                   var audioplay = document.createElement('audio');
                    audioplay.setAttribute('src', 'audio/ganador.mp3'); 
@@ -151,13 +145,16 @@ $(function() {
                               imageWidth: 400,
                               imageHeight:400,
                               imageAlt: 'Custom image',
-                              animation: true
+                              animation: true,
+                        customClass: {
+                                 popup: 'animated tada'
+                             }
                             })
     }
     }else{
-       alert("Solo puede escoger dos alimentos de tipo Constructor.")
+     //  alert("Solo puede escoger dos alimentos de tipo Constructor.")
         //PONER AUDIO 
-      if(numeroAlimentos>=4 && puntaje>=20){
+      if(numeroAlimentos>=4/*&& puntaje>=20*/){
            var audioplay = document.createElement('audio');
                    audioplay.setAttribute('src', 'audio/ganador.mp3'); 
                    audioplay.play()
@@ -169,10 +166,13 @@ $(function() {
                               imageWidth: 400,
                               imageHeight:400,
                               imageAlt: 'Custom image',
-                              animation: true
+                              animation: true,
+                        customClass: {
+                                 popup: 'animated tada'
+                             }
                             })
       }
-   //$("#miprimerdiv").append(ui.draggable);
+
         $("#"+element.seccion).append(ui.draggable);   
     }
           
@@ -203,8 +203,8 @@ $(".contenedor2").droppable({
  
    let existe=alimentoAñadidos.indexOf(ui.draggable.attr("src"))
 
-    if(numeroAlimentos>=4 && puntaje>=20){
-      //alert("puntos ganados: "+puntaje)
+    if(numeroAlimentos>=4 /*&& puntaje>=20*/){
+  
          var audioplay = document.createElement('audio');
                    audioplay.setAttribute('src', 'audio/ganador.mp3'); 
                    audioplay.play()
@@ -213,17 +213,16 @@ $(".contenedor2").droppable({
                               title:  'Bien Hecho, ganaste!',
                               text:  'Tu puntaje es:  ' +puntaje ,
                               imageUrl: 'img/premioo.png',
-                              imageWidth: 400,
-                              imageHeight:400,
+                              imageWidth: 200,
+                              imageHeight:200,
                               imageAlt: 'Custom image',
-                              animation: true
+                              animation: true,
+                        customClass: {
+                                 popup: 'animated tada'
+                             }
                             })
         audio.play()
-       /*   if (confirm("Desea volver a jugar presione Aceptar!")) {
-            location.reload();
-          } else {
-            window.location.href = "index.html";
-          }*/
+   
   }else{
     datos.forEach(element=>{
     if($(ui.draggable).attr("src")==element.rutaImg ){
@@ -254,7 +253,7 @@ $(".contenedor2").droppable({
     puntaje+=element.puntaje
       
           
-       if(numeroAlimentos>=4 && puntaje>=20){
+       if(numeroAlimentos>=4 /*&& puntaje>=20*/){
              var audioplay = document.createElement('audio');
                    audioplay.setAttribute('src', 'audio/ganador.mp3'); 
                    audioplay.play()
@@ -263,23 +262,21 @@ $(".contenedor2").droppable({
                               title:  'Bien Hecho, ganaste!',
                               text:  'Tu puntaje es:  ' +puntaje ,
                               imageUrl: 'img/premioo.png',
-                              imageWidth: 400,
-                              imageHeight:400,
+                              imageWidth: 200,
+                              imageHeight:200,
                               imageAlt: 'Custom image',
-                              animation: true
+                              animation: true,
+                        customClass: {
+                                 popup: 'animated tada'
+                             }
                             })
-   /*   alert("Juego terminado: "+puntaje)
-             if (confirm("Desea volver a jugar presione Aceptar!")) {
-            location.reload();
-          } else {
-            window.location.href = "index.html";
-          }*/
+ 
     }
   }else{
   
     alert("Solo puede escoger un alimento Regulador.")
       //PONER AUDIO 
-    if(numeroAlimentos>=4 && puntaje>=20){
+    if(numeroAlimentos>=4 /*&& puntaje>=20*/){
     //alert("Juego terminado: "+puntaje)    
          var audioplay = document.createElement('audio');
                    audioplay.setAttribute('src', 'audio/ganador.mp3'); 
@@ -289,10 +286,13 @@ $(".contenedor2").droppable({
                               title:  'Bien Hecho, ganaste!',
                               text:  'Tu puntaje es:  ' +puntaje ,
                               imageUrl: 'img/premioo.png',
-                              imageWidth: 400,
-                              imageHeight:400,
+                              imageWidth: 200,
+                              imageHeight:200,
                               imageAlt: 'Custom image',
-                              animation: true
+                              animation: true,
+                        customClass: {
+                                 popup: 'animated tada'
+                             }
                             })
     }
     //$("#miprimerdiv").append(ui.draggable); 
@@ -302,7 +302,7 @@ $(".contenedor2").droppable({
    else
     {
               $("#"+element.seccion).append(ui.draggable); 
-              alert("Debe escoger un alimento tipo Regulador.");
+            //  alert("Debe escoger un alimento tipo Regulador.");
         //PONER AUDIO QUE DIGA 'Debe escoger un alimento tipo Constructor'
     }
           
@@ -326,7 +326,7 @@ $(".contenedor3").droppable({
  
    let existe=alimentoAñadidos.indexOf(ui.draggable.attr("src"))
    
-     if(numeroAlimentos>=4 && puntaje>=20){
+     if(numeroAlimentos>=4/*&& puntaje>=20*/){
       //alert("puntos ganados: "+ puntaje)
           var audioplay = document.createElement('audio');
                    audioplay.setAttribute('src', 'audio/ganador.mp3'); 
@@ -336,22 +336,16 @@ $(".contenedor3").droppable({
                               title:  'Bien Hecho, ganaste!',
                               text:  'Tu puntaje es:  ' +puntaje ,
                               imageUrl: 'img/premioo.png',
-                              imageWidth: 400,
-                              imageHeight:400,
+                              imageWidth: 200,
+                              imageHeight:200,
                               imageAlt: 'Custom image',
-                              animation: true
+                              animation: true,
+                        customClass: {
+                                 popup: 'animated tada'
+                             }
                             })
        audio.play()
-//         Swal.fire(
-//                      'Bien Hecho ganaste!',
-//                      'Tu puntaje es:' +puntaje ,
-//                      'success'
-//                    )
-          /* if (confirm("Desea volver a jugar presione Aceptar!")) {
-            location.reload();
-          } else {
-            window.location.href = "index.html";
-          }*/
+//      
   }else{
     datos.forEach(element=>{    
     if($(ui.draggable).attr("src")==element.rutaImg ){
@@ -381,14 +375,8 @@ $(".contenedor3").droppable({
                alimentoAñadidos.push(element.rutaImg)
             puntaje+=element.puntaje
             /////////////////////////////////////////
-               if(numeroAlimentos>=4 && puntaje>=20){
-              //alert("Juego terminado: "+puntaje)
-                   //aparecerPopupWinner()
-//                   Swal.fire(
-//                      'Bien Hecho ganaste!',
-//                      'Tu puntaje es:' +puntaje ,
-//                      'success'
-//                    )
+               if(numeroAlimentos>=4/*&& puntaje>=20*/){
+              
                    var audioplay = document.createElement('audio');
                    audioplay.setAttribute('src', 'audio/ganador.mp3'); 
                    audioplay.play()
@@ -397,17 +385,15 @@ $(".contenedor3").droppable({
                               title:  'Bien Hecho, ganaste!',
                               text:  'Tu puntaje es:  ' +puntaje ,
                               imageUrl: 'img/premioo.png',
-                              imageWidth: 400,
-                              imageHeight:400,
+                              imageWidth: 200,
+                              imageHeight:200,
                               imageAlt: 'Custom image',
-                              animation: true
+                              animation: true,
+                        customClass: {
+                                 popup: 'animated tada'
+                             }
                             })
                    
-//                    if (confirm("Desea volver a jugar presione Aceptar!")) {
-//                    location.reload();
-//                  } else {
-//                    window.location.href = "index.html";
-//                  }
                    
                    
 
@@ -417,9 +403,9 @@ $(".contenedor3").droppable({
           }
             else
           {
-              alert("Solo puede escoger un alimento energético.")
+             // alert("Solo puede escoger un alimento energético.")
               //PONER AUDIO 
-              if(numeroAlimentos>=4 && puntaje>=20){
+              if(numeroAlimentos>=4 /*&& puntaje>=20*/){
                 $(".draggable").hide(); 
                    var audioplay = document.createElement('audio');
                    audioplay.setAttribute('src', 'audio/ganador.mp3'); 
@@ -430,11 +416,13 @@ $(".contenedor3").droppable({
                               title:  'Bien Hecho, ganaste!',
                               text:  'Tu puntaje es:  ' +puntaje ,
                               imageUrl: 'img/premioo.png',
-                              imageWidth: 400,
-                              imageHeight:400,
+                              imageWidth: 200,
+                              imageHeight:200,
                               imageAlt: 'Custom image',
                               animation: true,
-                              visibility: 'hidden',
+                             customClass: {
+                                 popup: 'animated tada'
+                             }
                     
                             })
                   
@@ -448,7 +436,7 @@ $(".contenedor3").droppable({
     {
               
               $("#"+element.seccion).append(ui.draggable); 
-              alert("Debe escoger un alimento tipo energético.");
+             // alert("Debe escoger un alimento tipo energético.");
         //PONER AUDIO 
     }
         
