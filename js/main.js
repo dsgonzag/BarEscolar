@@ -274,7 +274,7 @@ $(".contenedor2").droppable({
     }
   }else{
   
-    alert("Solo puede escoger un alimento Regulador.")
+   // alert("Solo puede escoger un alimento Regulador.")
       //PONER AUDIO 
     if(numeroAlimentos>=4 /*&& puntaje>=20*/){
     //alert("Juego terminado: "+puntaje)    
